@@ -2,6 +2,7 @@
 
 Included taps:
 
+- pyzbar
 - secrets-to-paper
 
 License
