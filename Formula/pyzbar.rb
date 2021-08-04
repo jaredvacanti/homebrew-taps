@@ -2,7 +2,7 @@ class Pyzbar < Formula
     include Language::Python::Virtualenv
 
     depends_on "zbar"
-    depends_on "python@3.x"
+    depends_on "python@3.9"
 
     desc "Read one-dimensional barcodes and QR codes from Python 2 and 3."
     homepage "https://github.com/NaturalHistoryMuseum/pyzbar"
