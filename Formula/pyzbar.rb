@@ -11,7 +11,7 @@ class Pyzbar < Formula
     sha256 "78efb0b916f3c1836bf2a8a81af05834a14346dd22aa84f0de411ac06068a43f"
 
     def install
-        virtualenv_install_with_resources
+        virtualenv_install_with_resources(:using => "python@3")
     end
 
     test do
