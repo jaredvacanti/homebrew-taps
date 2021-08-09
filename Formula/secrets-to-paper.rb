@@ -97,11 +97,6 @@ class SecretsToPaper < Formula
     sha256 "505253854f607f2abf4d16092c61d4e9d511a3b4392e60bff957a68592b04369"
     end
 
-    resource "secrets-to-paper" do
-    url "https://files.pythonhosted.org/packages/ba/d4/fcc32ac4c55774cc67926c9c5a70d6e8aba17b6213506ffbbddbe8ec3310/secrets-to-paper-0.0.5.tar.gz"
-    sha256 "78efb0b916f3c1836bf2a8a81af05834a14346dd22aa84f0de411ac06068a43f"
-    end
-
     resource "six" do
     url "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
     sha256 "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
@@ -134,6 +129,7 @@ class SecretsToPaper < Formula
 
     def install
         virtualenv_install_with_resources
+        man1.install "docs/_build/secrets-to-paper.1"
     end
 
     test do
