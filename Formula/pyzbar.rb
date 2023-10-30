@@ -9,7 +9,7 @@ class Pyzbar < Formula
     license "MIT"
 
     url "https://github.com/NaturalHistoryMuseum/pyzbar/archive/refs/tags/v0.1.9.tar.gz"
-    version 0.1.9
+    version "0.1.9"
 
     def install
         virtualenv_install_with_resources(:using => "python@3")
