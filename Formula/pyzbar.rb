@@ -13,7 +13,7 @@ class Pyzbar < Formula
     version "0.1.9"
 
     def install
-        virtualenv_install_with_resources(:using => "python@3")
+        system Formula["python@3.11"].opt_bin/"python3", *Language::Python.setup_install_args(prefix)
     end
 
     test do
