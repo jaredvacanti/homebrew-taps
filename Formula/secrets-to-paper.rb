@@ -2,7 +2,7 @@ class SecretsToPaper < Formula
     include Language::Python::Virtualenv
 
     depends_on "pyzbar"
-    depends_on "python@3.10"
+    depends_on "python@3.11"
 
     desc "A command-line tool to convert secret keys to printable PDFs and back again"
     homepage "https://github.com/jaredvacanti/secrets-to-paper/"
