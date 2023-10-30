@@ -8,7 +8,7 @@ class Pyzbar < Formula
     homepage "https://github.com/NaturalHistoryMuseum/pyzbar"
     license "MIT"
 
-    head "https://github.com/NaturalHistoryMuseum/pyzbar.git", branch: "master"
+    url "https://github.com/NaturalHistoryMuseum/pyzbar.git"
 
     def install
         virtualenv_install_with_resources(:using => "python@3")
